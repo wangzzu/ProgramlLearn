@@ -1,4 +1,4 @@
-namespace java service.demo
+namespace java matt.thrifthello
  service Hello{
   string helloString(1:string para)
   i32 helloInt(1:i32 para)
