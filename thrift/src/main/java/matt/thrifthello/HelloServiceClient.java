@@ -7,6 +7,12 @@ import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TTransport;
 import org.apache.thrift.transport.TTransportException;
 
+/**
+ * 客户端的部分
+ * 
+ * @author matt
+ * @since Apr 6, 2016
+ */
 public class HelloServiceClient {
 	public static void main(String[] args) {
 		try {

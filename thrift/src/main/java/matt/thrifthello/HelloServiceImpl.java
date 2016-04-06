@@ -2,6 +2,12 @@ package matt.thrifthello;
 
 import org.apache.thrift.TException;
 
+/**
+ * 对接口进行实现
+ * 
+ * @author matt
+ * @since Apr 6, 2016
+ */
 public class HelloServiceImpl implements Hello.Iface {
 	public boolean helloBoolean(boolean para) throws TException {
 		System.out.printf("hello true/false");

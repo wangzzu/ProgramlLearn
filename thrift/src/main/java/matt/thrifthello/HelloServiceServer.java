@@ -6,6 +6,12 @@ import org.apache.thrift.server.TThreadPoolServer;
 import org.apache.thrift.transport.TServerSocket;
 import org.apache.thrift.transport.TTransportException;
 
+/**
+ * 服务器端部分
+ * 
+ * @author matt
+ * @since Apr 6, 2016
+ */
 public class HelloServiceServer {
 	public static void main(String[] args) {
 		try {
