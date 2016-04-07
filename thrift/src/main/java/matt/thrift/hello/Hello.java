@@ -4,7 +4,7 @@
  * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
  *  @generated
  */
-package matt.thrifthello;
+package matt.thrift.hello;
 
 import java.util.BitSet;
 import java.util.Collections;

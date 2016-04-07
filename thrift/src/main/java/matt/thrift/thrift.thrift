@@ -12,3 +12,4 @@ service ThriftService{
 	list<User> queryUserList()
 	map<string, string> queryUserNamePass()
 	map<i32, User> queryUserMap()
+}

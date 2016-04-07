@@ -1,4 +1,4 @@
-package matt.thrifthello;
+package matt.thrift.hello;
 
 import org.apache.thrift.TProcessor;
 import org.apache.thrift.server.TServer;
