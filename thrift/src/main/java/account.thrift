@@ -17,11 +17,8 @@ exception InvalidOperation{
 	2: string reason
 }
 
-service ThriftService{
-	void addUser(1:User user)
+service Account{
+	void addUser(1:User user) throws (1: InvalidOperation e)
 	User queryUser(1:i32 id)
 	list<User> queryUserList()
-	map<string, string> queryUserNamePass()
-	map<i32, User> queryUserMap()
-	string doAction(1:User user) throws (1: InvalidOperation e)
 }
