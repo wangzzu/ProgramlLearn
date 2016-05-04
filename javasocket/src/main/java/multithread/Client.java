@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.net.SocketTimeoutException;
 
 /**
  * Created by matt on 5/4/16.
@@ -27,21 +28,25 @@ public class Client {
 			//从系统标准输入读入一行字符串
 			String readLine = null;
 			readLine = sysin.readLine();
+			socket.setSoTimeout(10 * 1000); // 设置超时时间，这里设为10s
+			try {
+				while (!readLine.equalsIgnoreCase("bye")) {
 
-			while (!readLine.equalsIgnoreCase("bye")) {
+					os.println(readLine); // 将从系统标准输入读入的字符串输出到Server
+					os.flush(); // 刷新输出流，使Server马上收到该字符串
+					System.out.println("Client:" + readLine);
+					System.out.println("Server:" + is.readLine()); // 从Server读入一字符串，并打印到标准输出上
 
-				os.println(readLine); // 将从系统标准输入读入的字符串输出到Server
-				os.flush(); // 刷新输出流，使Server马上收到该字符串
-				System.out.println("Client:" + readLine);
-				System.out.println("Server:" + is.readLine()); // 从Server读入一字符串，并打印到标准输出上
-
-				readLine = sysin.readLine(); //从系统标准输入读入一字符串
+					readLine = sysin.readLine(); //从系统标准输入读入一字符串
+				}
+			} catch (SocketTimeoutException e) {
+				System.out.println("The Time is out!");
 			}
 			os.close(); // 关闭Socket输出流
 			is.close(); // 关闭Socket输入流
 			socket.close(); // 关闭Socket
 		} catch (IOException e) {
-			System.out.println("Error: "+e);
+			System.out.println("Error: " + e);
 		}
 	}
 }
