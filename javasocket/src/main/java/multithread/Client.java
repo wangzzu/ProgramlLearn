@@ -1,4 +1,4 @@
-package simple;
+package multithread;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.net.Socket;
 /**
  * Created by matt on 5/4/16.
  */
-public class TalkClient {
+public class Client {
 	public static void main(String[] args) {
 		try {
 			//向本机的4040端口发出客户端请求
@@ -41,7 +41,7 @@ public class TalkClient {
 			is.close(); // 关闭Socket输入流
 			socket.close(); // 关闭Socket
 		} catch (IOException e) {
-			System.out.println("Error: " + e);
+			System.out.println("Error: "+e);
 		}
 	}
 }
