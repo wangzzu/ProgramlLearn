@@ -25,43 +25,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LinkedListTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java_thinking/src/javabasic/collection/list/LinkedListTest.java">
+      <file leaf-file-name="HashMapTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java_thinking/src/javabasic/collection/map/HashMapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68503934">
-              <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/java/jdk1.7.0_79/src.zip!/java/util/Queue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="198" column="6" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.6923077">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/java/jdk1.7.0_79/src.zip!/java/util/LinkedList.java">
+      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/java/jdk1.7.0_79/src.zip!/java/util/HashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6551723">
-              <caret line="797" column="13" selection-start-line="797" selection-start-column="13" selection-end-line="797" selection-end-column="13" />
-              <folding>
-                <element signature="e#7971#7972#0" expanded="true" />
-                <element signature="e#7999#8000#0" expanded="true" />
-                <element signature="e#15841#15842#0" expanded="true" />
-                <element signature="e#15890#15891#0" expanded="true" />
-                <element signature="e#23177#23178#0" expanded="true" />
-                <element signature="e#23204#23205#0" expanded="true" />
-                <element signature="e#23662#23663#0" expanded="true" />
-                <element signature="e#23698#23699#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="511" column="14" selection-start-line="511" selection-start-column="14" selection-end-line="511" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,6 +82,7 @@
         <option value="$PROJECT_DIR$/java_thinking/src/javabasic/collection/list/ArrayListTest.java" />
         <option value="$PROJECT_DIR$/java_thinking/src/javabasic/collection/list/VectorTest.java" />
         <option value="$PROJECT_DIR$/java_thinking/src/javabasic/collection/list/LinkedListTest.java" />
+        <option value="$PROJECT_DIR$/java_thinking/src/javabasic/collection/map/HashMapTest.java" />
       </list>
     </option>
   </component>
@@ -228,7 +208,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="list" />
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,27 +228,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="Application.LinkedListTest">
-    <configuration default="false" name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="javabasic.exception.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="javaBasic.exception.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="java_thinking" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.HashMapTest">
     <configuration default="false" name="HashSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -337,6 +297,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="javabasic.collection.list.LinkedListTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="java_thinking" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="HashMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="javabasic.collection.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="javabasic.collection.map.HashMapTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -545,19 +525,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.HashSetTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.FieldTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ArrayListTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LinkedListTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.HashSetTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.FieldTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ArrayListTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.LinkedListTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.HashMapTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LinkedListTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ArrayListTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.FieldTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HashSetTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.main" />
+        <item index="0" class="java.lang.String" itemvalue="Application.HashMapTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LinkedListTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ArrayListTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.FieldTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.HashSetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -609,7 +589,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25075528" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37956205" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37956205" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28070176" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -833,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/java/jdk1.7.0_79/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="803" column="24" selection-start-line="803" selection-start-column="24" selection-end-line="803" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/java/jdk1.7.0_79/src.zip!/java/util/LinkedHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18846154">
@@ -980,23 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/java/jdk1.7.0_79/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6551723">
-          <caret line="797" column="13" selection-start-line="797" selection-start-column="13" selection-end-line="797" selection-end-column="13" />
-          <folding>
-            <element signature="e#7971#7972#0" expanded="true" />
-            <element signature="e#7999#8000#0" expanded="true" />
-            <element signature="e#15841#15842#0" expanded="true" />
-            <element signature="e#15890#15891#0" expanded="true" />
-            <element signature="e#23177#23178#0" expanded="true" />
-            <element signature="e#23204#23205#0" expanded="true" />
-            <element signature="e#23662#23663#0" expanded="true" />
-            <element signature="e#23698#23699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/java/jdk1.7.0_79/src.zip!/java/util/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1007,11 +963,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java_thinking/src/javabasic/collection/list/LinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68503934">
-          <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.3116883">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.7.0_79/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.7.0_79/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="511" column="14" selection-start-line="511" selection-start-column="14" selection-end-line="511" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_thinking/src/javabasic/collection/map/HashMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6923077">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
