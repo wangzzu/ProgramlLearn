@@ -1,4 +1,4 @@
-package javaBasic.serialize;
+package javabasic.serialize;
 
 //: io/Blips.java
 //Simple use of Externalizable & a pitfall.

@@ -1,4 +1,4 @@
-package javaBasic.serialize;
+package javabasic.serialize;
 
 //: io/RecoverCADState.java
 //Restoring the state of the pretend CAD system.

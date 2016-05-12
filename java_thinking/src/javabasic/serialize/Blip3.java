@@ -1,4 +1,4 @@
-package javaBasic.serialize;
+package javabasic.serialize;
 
 //: io/Blip3.java
 //Reconstructing an externalizable object.

@@ -1,4 +1,4 @@
-package javaBasic.serialize;
+package javabasic.serialize;
 
 //: io/SerialCtl.java
 //Controlling serialization by adding your own

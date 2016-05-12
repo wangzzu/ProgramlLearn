@@ -1,4 +1,4 @@
-package javaBasic.concurrency;
+package javabasic.concurrency;
 
 /**
  * Created by matt on 4/27/16.

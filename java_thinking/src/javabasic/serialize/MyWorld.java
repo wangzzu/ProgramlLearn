@@ -1,4 +1,4 @@
-package javaBasic.serialize;
+package javabasic.serialize;
 
 //: io/MyWorld.java
 import java.io.ByteArrayInputStream;

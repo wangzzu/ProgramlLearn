@@ -1,4 +1,4 @@
-package javaBasic.serialize;
+package javabasic.serialize;
 
 //: io/StoreCADState.java
 //Saving the state of a pretend CAD system.

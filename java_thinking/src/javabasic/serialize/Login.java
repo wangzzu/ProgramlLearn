@@ -1,4 +1,4 @@
-package javaBasic.serialize;
+package javabasic.serialize;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

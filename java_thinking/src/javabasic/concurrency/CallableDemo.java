@@ -1,4 +1,4 @@
-package javaBasic.concurrency;
+package javabasic.concurrency;
 
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
