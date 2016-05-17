@@ -4,4 +4,5 @@
 
 - [Thrift学习的简单示例](https://github.com/wangzzu/java_learn/tree/master/thrift)（可参考博文[Thrift之学习笔记](http://wangzzu.github.io/2016/04/07/thrift-learn/)学习）；
 - [Java Socket学习的简单示例](https://github.com/wangzzu/java_learn/tree/master/javasocket)（可参考博文[Java Socket之学习笔记]()学习）
+- [Java 容器类的一些示例](https://github.com/wangzzu/java_learn/tree/master/java_thinking/src/javabasic/collection)(可参考博文[Java容器学习](http://wangzzu.github.io/2016/05/13/java-collection/)学习)
 
