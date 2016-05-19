@@ -59,8 +59,15 @@ public class Blip3 implements Externalizable {
 		b3 = (Blip3) in.readObject();
 		System.out.println(b3);
 	}
-} /*
-	 * Output: Constructing objects: Blip3(String x, int a) A String 47 Saving
-	 * object: Blip3.writeExternal Recovering b3: Blip3 Constructor
-	 * Blip3.readExternal A String 47
-	 */// :~
+}
+/* Output:
+* Constructing objects:
+* Blip3(String x, int a)
+* A String 47
+* Saving object:
+* Blip3.writeExternal
+* Recovering b3:
+* Blip3 Constructor
+* Blip3.readExternal
+* A String 47
+ */

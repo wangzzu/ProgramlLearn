@@ -3,6 +3,7 @@ package javabasic.serialize;
 //: io/SerialCtl.java
 //Controlling serialization by adding your own
 //writeObject() and readObject() methods.
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -20,17 +21,25 @@ public class SerialCtl implements Serializable {
 	}
 
 	public String toString() {
-		return a + "\n" + b;
+		return a + " " + b;
 	}
 
+	/**
+	 * 自定义该方法，这里要注意方法时private
+	 * 在调用ObjectOutputStream.writeObject()时，会检查所传递的Serializable对象，看看是否实现了它自己的writeObject()。
+	 * 如果是这样，就跳过正常的序列化过程并调用它的writeObject()
+	 *
+	 * @param stream
+	 * @throws IOException
+	 */
 	private void writeObject(ObjectOutputStream stream) throws IOException {
-		stream.defaultWriteObject();
-		stream.writeObject(b);
+		stream.defaultWriteObject(); // 执行默认的writeObject()
+		stream.writeObject(b); // transient字段需要明确保存和
 	}
 
 	private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException {
-		stream.defaultReadObject();
-		b = (String) stream.readObject();
+		stream.defaultReadObject(); // 执行默认的readObject()
+		b = (String) stream.readObject(); // transient字段需要明确恢复
 	}
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
@@ -44,7 +53,10 @@ public class SerialCtl implements Serializable {
 		SerialCtl sc2 = (SerialCtl) in.readObject();
 		System.out.println("After:\n" + sc2);
 	}
-} /*
-	 * Output: Before: Not Transient: Test1 Transient: Test2 After: Not
-	 * Transient: Test1 Transient: Test2
-	 */// :~
+}
+/*
+* Before:
+* Not Transient: Test1 Transient: Test2
+* After:
+* Not Transient: Test1 Transient: Test2
+*/

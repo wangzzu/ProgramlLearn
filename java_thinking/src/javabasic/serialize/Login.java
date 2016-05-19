@@ -38,8 +38,13 @@ public class Login implements Serializable {
 		System.out.println("logon a = " + a);
 	}
 } /*
-	 * Output: (Sample) logon a = logon info: username: Hulk date: Sat Nov 19
-	 * 15:03:26 MST 2005 password: myLittlePony Recovering object at Sat Nov 19
-	 * 15:03:28 MST 2005 logon a = logon info: username: Hulk date: Sat Nov 19
-	 * 15:03:26 MST 2005 password: null
-	 */// :~
+* logon a = logon info:
+*   username: Hulk
+*    date: Tue May 17 11:11:28 CST 2016
+*    password: myLittlePony
+* Recovering object at Tue May 17 11:11:29 CST 2016
+* logon a = logon info:
+*    username: Hulk
+*    date: Tue May 17 11:11:28 CST 2016
+*    password: null
+*/
