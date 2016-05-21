@@ -6,7 +6,7 @@ import java.util.Random;
 /**
  * Created by matt on 5/16/16.
  */
-public class Person implements Serializable{
+public class Person implements Serializable {
 	private String name;
 	private int age;
 	private Gender gender;
