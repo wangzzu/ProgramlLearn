@@ -1,15 +1,12 @@
-package AbstractFactory;
+package abstractfactory;
 
 /**
  * Rectangle class
- * 
- * @author matt
  *
+ * @author matt
  */
 public class Rectangle implements Shape {
-
-	@Override
-	public void draw() {
-		System.out.println("Rectangle: draw() method.");
-	}
+    public void draw() {
+        System.out.println("Rectangle: draw() method.");
+    }
 }

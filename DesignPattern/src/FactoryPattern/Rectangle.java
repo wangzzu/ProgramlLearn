@@ -1,10 +1,8 @@
-package FactoryPattern;
+package factorypattern;
 
 public class Rectangle implements Shape {
-
-	@Override
-	public void draw() {
-		System.out.println("Rectangle: draw() method.");
-	}
+    public void draw() {
+        System.out.println("Rectangle: draw() method.");
+    }
 
 }

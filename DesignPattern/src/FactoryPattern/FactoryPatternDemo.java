@@ -1,19 +1,19 @@
-package FactoryPattern;
+package factorypattern;
 
 public class FactoryPatternDemo {
 	public static void main(String[] args) {
 		ShapeFactory shapeFactory = new ShapeFactory();
-		// 获取 Circle 的对象，并调用它的 draw 方法
+		// 锟斤拷取 Circle 锟侥讹拷锟襟，诧拷锟斤拷锟斤拷锟斤拷锟斤拷 draw 锟斤拷锟斤拷
 		Shape shape1 = shapeFactory.getShape("CIRCLE");
-		// 调用 Circle 的 draw 方法
+		// 锟斤拷锟斤拷 Circle 锟斤拷 draw 锟斤拷锟斤拷
 		shape1.draw();
-		// 获取 Rectangle 的对象，并调用它的 draw 方法
+		// 锟斤拷取 Rectangle 锟侥讹拷锟襟，诧拷锟斤拷锟斤拷锟斤拷锟斤拷 draw 锟斤拷锟斤拷
 		Shape shape2 = shapeFactory.getShape("RECTANGLE");
-		// 调用 Rectangle 的 draw 方法
+		// 锟斤拷锟斤拷 Rectangle 锟斤拷 draw 锟斤拷锟斤拷
 		shape2.draw();
-		// 获取 Square 的对象，并调用它的 draw 方法
+		// 锟斤拷取 Square 锟侥讹拷锟襟，诧拷锟斤拷锟斤拷锟斤拷锟斤拷 draw 锟斤拷锟斤拷
 		Shape shape3 = shapeFactory.getShape("SQUARE");
-		// 调用 Square 的 draw 方法
+		// 锟斤拷锟斤拷 Square 锟斤拷 draw 锟斤拷锟斤拷
 		shape3.draw();
 	}
 }

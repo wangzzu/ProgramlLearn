@@ -1,4 +1,4 @@
-package SingletonPattern;
+package singletonpattern;
 
 /**
  * SingleObject

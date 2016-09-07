@@ -1,4 +1,4 @@
-package SingletonPattern;
+package singletonpattern;
 
 /**
  * 双检锁/双重校验锁

@@ -1,7 +1,7 @@
-package FactoryPattern;
+package factorypattern;
 
 public class ShapeFactory {
-	// 使用 getShape 方法获取形状类型的对象
+	// 使锟斤拷 getShape 锟斤拷锟斤拷锟斤拷取锟斤拷状锟斤拷锟酵的讹拷锟斤拷
 	public Shape getShape(String shapeType) {
 		if (shapeType == null) {
 			return null;

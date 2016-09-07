@@ -1,15 +1,12 @@
-package AbstractFactory;
+package abstractfactory;
 
 /**
  * the Circle class
- * 
- * @author matt
  *
+ * @author matt
  */
 public class Circle implements Shape {
-
-	@Override
-	public void draw() {
-		System.out.println("Circle: draw() method.");
-	}
+    public void draw() {
+        System.out.println("Circle: draw() method.");
+    }
 }

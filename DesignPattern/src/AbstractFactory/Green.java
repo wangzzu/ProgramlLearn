@@ -1,15 +1,13 @@
-package AbstractFactory;
+package abstractfactory;
 
 /**
  * the Green class
- * 
- * @author matt
  *
+ * @author matt
  */
 public class Green implements Color {
 
-	@Override
-	public void fill() {
-		System.out.println("Green: fill() method.");
-	}
+    public void fill() {
+        System.out.println("Green: fill() method.");
+    }
 }

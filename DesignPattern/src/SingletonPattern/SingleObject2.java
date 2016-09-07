@@ -1,4 +1,4 @@
-package SingletonPattern;
+package singletonpattern;
 
 /**
  * 懒汉式，线程安全

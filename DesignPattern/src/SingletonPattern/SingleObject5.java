@@ -1,4 +1,4 @@
-package SingletonPattern;
+package singletonpattern;
 
 /**
  * 由于 SingletonHolder 是私有的，除了 getInstance() 之外没有办法访问它，因此它是懒汉式的；同时读取实例的时候不会进行同步，没有性能缺陷；

@@ -1,11 +1,10 @@
-package FactoryPattern;
+package factorypattern;
 
 /**
- * Shape½Ó¿Ú
- * 
- * @author matt
+ * ShapeÀà
  *
+ * @author matt
  */
 public interface Shape {
-	void draw();
+    void draw();
 }

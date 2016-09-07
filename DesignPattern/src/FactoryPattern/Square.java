@@ -1,8 +1,7 @@
-package FactoryPattern;
+package factorypattern;
 
 public class Square implements Shape {
-	@Override
-	public void draw() {
-		System.out.println("Square: draw() method.");
-	}
+    public void draw() {
+        System.out.println("Square: draw() method.");
+    }
 }
