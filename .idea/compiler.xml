@@ -22,16 +22,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="javasocket" />
+        <module name="Concurrency" />
+        <module name="JunitLearn" />
         <module name="jvm" />
         <module name="thread" />
         <module name="thrift" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Concurrency" target="1.7" />
       <module name="javasocket" target="1.7" />
-      <module name="jvm" target="1.5" />
-      <module name="thread" target="1.5" />
+      <module name="JunitLearn" target="1.7" />
+      <module name="jvm" target="1.7" />
+      <module name="thread" target="1.7" />
       <module name="thrift" target="1.7" />
     </bytecodeTargetLevel>
   </component>

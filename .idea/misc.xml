@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/multithread/pom.xml" />
         <option value="$PROJECT_DIR$/thrift/pom.xml" />
         <option value="$PROJECT_DIR$/jvm/pom.xml" />
+        <option value="$PROJECT_DIR$/Concurrency/pom.xml" />
       </list>
     </option>
   </component>
