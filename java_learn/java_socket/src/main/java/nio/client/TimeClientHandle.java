@@ -5,6 +5,7 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
@@ -77,28 +78,30 @@ public class TimeClientHandle implements Runnable {
 
     private void handleInput(SelectionKey key) throws IOException {
         if (key.isValid()) {
-            SocketChannel socketChannel = (SocketChannel) key.channel();
+            System.out.println("start");
+            SocketChannel sc = (SocketChannel) key.channel();
             if (key.isConnectable()) {
-                if (socketChannel.finishConnect()) {//note: 连接成功
-                    socketChannel.register(selector, SelectionKey.OP_READ);
-                    doWrite(socketChannel);
+                if (sc.finishConnect()) {//note: 连接成功
+                    sc.register(selector, SelectionKey.OP_READ);
+                    doWrite(sc);
                 } else {
                     System.exit(1);
                 }
-                if (key.isReadable()) {
-                    ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
-                    int readBytes = socketChannel.read(byteBuffer);
-                    if (readBytes > 0) {
-                        byteBuffer.flip();
-                        byte[] bytes = new byte[byteBuffer.remaining()];
-                        byteBuffer.get(bytes);
-                        String body = new String(bytes, "UTF-8");
-                        System.out.println("Now is: " + body);
-                        this.stop = true;
-                    } else if (readBytes < 0) {
-                        key.cancel();
-                        socketChannel.close();
-                    }
+            }
+            if (key.isReadable()) {
+                ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
+                int readBytes = sc.read(byteBuffer);
+                if (readBytes > 0) {
+                    byteBuffer.flip();
+                    byte[] bytes = new byte[byteBuffer.remaining()];
+                    byteBuffer.get(bytes);
+                    String body = new String(bytes, "UTF-8");
+                    System.out.println("Now is: " + body);
+                    this.stop = true;
+                } else if (readBytes < 0) {
+                    key.cancel();
+                    sc.close();
+
                 }
             }
         }
@@ -119,9 +122,6 @@ public class TimeClientHandle implements Runnable {
         ByteBuffer byteBuffer = ByteBuffer.allocate(req.length);
         byteBuffer.put(req);
         byteBuffer.flip();
-        while(byteBuffer.hasRemaining()){
-            System.out.println((char) byteBuffer.get());
-        }
         byteBuffer.clear();
         sc.write(byteBuffer);
         if (!byteBuffer.hasRemaining()) {

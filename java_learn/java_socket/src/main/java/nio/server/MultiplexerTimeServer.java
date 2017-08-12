@@ -111,13 +111,13 @@ public class MultiplexerTimeServer implements Runnable {
         }
     }
 
-    private void doWrite(SocketChannel socketChannel, String response) throws IOException {
+    private void doWrite(SocketChannel sc, String response) throws IOException {
         if (response != null && response.trim().length() > 0) {
             byte[] bytes = response.getBytes();
             ByteBuffer writeBuffer = ByteBuffer.allocate(bytes.length);
             writeBuffer.put(bytes);
             writeBuffer.flip();
-            socketChannel.write(writeBuffer);//note: 将消息发送给 client
+            sc.write(writeBuffer);//note: 将消息发送给 client
             System.out.println("response succeed." + response);
             //note: 如果发送区的 TCP 缓冲区满,会导致写半包,此时,需要注册监听写操作位,循环写,直到整包消息写入 TCP 缓冲区。
         }
